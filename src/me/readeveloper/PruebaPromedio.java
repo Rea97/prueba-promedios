@@ -30,7 +30,7 @@ public class PruebaPromedio {
     private double getEstadisticoTablas() {
         double alfaReal = (100 - this.alfa) / 100;
         double zABuscar = alfaReal / 2;
-        System.out.println(String.format("Ingresa estadistico de tablas Z %.5f/2", zABuscar));
+        System.out.println(String.format("Ingresa estadistico de tablas Z %.5f", zABuscar));
         return new Scanner(System.in).nextDouble();
     }
 
