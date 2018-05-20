@@ -15,7 +15,7 @@ public class Main {
         System.out.println("Ingresa porcentaje de alfa: ");
         alfa = sc.nextDouble();
 
-        numerosAleatorios = new RandomNumberGenerator(cantidad, 5).make();
+        numerosAleatorios = new GeneradorNumerosAleatorios(cantidad, 5).make();
         pruebaPromedio = new PruebaPromedio(numerosAleatorios, alfa);
         pruebaPromedio.resolver();
     }
