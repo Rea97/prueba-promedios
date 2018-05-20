@@ -17,6 +17,7 @@ public class Main {
 
         numerosAleatorios = new GeneradorNumerosAleatorios(cantidad, 5).make();
         pruebaPromedio = new PruebaPromedio(numerosAleatorios, alfa);
+
         pruebaPromedio.resolver();
     }
 }

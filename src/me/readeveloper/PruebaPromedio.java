@@ -39,9 +39,13 @@ public class PruebaPromedio {
         double estadistico = this.calcularEstadistico(promedio);
         double estadisticoTablas = this.getEstadisticoTablas();
 
-        System.out.println(estadistico);
-        System.out.println(estadisticoTablas);
+        System.out.println("-------------Numeros aleatorios---------------");
+        for(double number :this.numerosAleatorios) {
+            System.out.println(number);
+        }
+        System.out.println("----------------------------------");
 
+        System.out.println(String.format("Z < Z alfa/2"));
         if (estadistico < estadisticoTablas) {
             System.out.println(
                 String.format("%.5f < %.5f | verdadero", estadistico, estadisticoTablas)
